@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+.dashboard {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard .logo {
+    max-height: 50px;
+    margin-right: 10px;
+}
+.dashboard h4 {
+    margin: 0;
+    color: #ffa500;
+}
+.dashboard .left-section {
+    display: flex;
+    align-items: center;
+}
+.dashboard nav {
+    display: flex;
+    gap: 10px;
+}
+.dashboard a {
+    color: #ffa500;
+    text-decoration: none;
+    padding: 10px;
+}
+.main-content {
+    padding: 20px;
+}
+.best-seller {
+    text-align: center;
+    margin: 20px 0;
+}
+.best-seller img {
+    max-width: 100%;
+    height: auto;
+}
+.section {
+    margin: 20px 0;
+}
+.section h2 {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 4px solid #ffa500;
+}
+.section-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.lookbook-gallery img { 
+    height: 600px;
+    width: 400px;
+    margin: 10px;
+}
+.lookbook-gallery { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group input[type="submit"] {
+    background-color: #ffa500;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main-content .best-seller img{
+    width: 500px;
+    height: 500px;
+}
+
+.section .section-content .lookbook-gallery img {
+    width: 450px;
+    height: 700px;
+}
+   

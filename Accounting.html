@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Accounting.css">
+    <title>OT - Accounting Department</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"> Accounting Department </div>
+            <ul>
+                <li><a href="#" onclick="showHome()">Home</a></li>
+                <li><a href="#" onclick="showAddTransaction()">Add Transaction</a></li>
+                <li><a href="#" onclick="showHistoryTransaction()">Transaction History</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="home">
+        <div class="banner1">
+            <a href="collection.html">
+                <img src="img\AccountingBanner.png" alt="Example Banner">
+            </a>
+        </div>
+    </div>
+
+    <div id="add-transaction" class="add-transaction" style="display: none;">
+        <form id="transaction-form">
+            <label for="birthday">Date of Transaction:</label> 
+            <input type="date" id="birthday" name="birthday"> <br>
+
+            <label for="category">Select Category:</label>
+            <select id="category" name="category">
+                <option value="" disabled selected>Select Category</option>
+                <option value="Materials">Materials</option>
+                <option value="Equipment">Equipment</option>
+            </select> <br>
+
+            <label for="amount">Enter Amount:</label>
+            <input type="text"  id="amount" name="amount" placeholder="Enter amount..."> <br>
+
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" placeholder="Enter short description...">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="history-transaction" class="history-transaction" style="display: none;">
+        <table id="transaction-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Accounting.js"></script>
+    <script>
+        function showHome() {
+            document.getElementById('home').style.display = 'block';
+            document.getElementById('add-transaction').style.display = 'none';
+            document.getElementById('history-transaction').style.display = 'none';
+        }
+
+        function showAddTransaction() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('add-transaction').style.display = 'block';
+            document.getElementById('history-transaction').style.display = 'none';
+        }
+
+        function showHistoryTransaction() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('add-transaction').style.display = 'none';
+            document.getElementById('history-transaction').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

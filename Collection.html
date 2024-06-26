@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            color: white;
+            margin: 100px;
+            text-align: center;
+            font-size: 50px;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+        }
+        .image-grid5 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 10px; /* Gap between items */
+            margin-top: 100px;
+        }
+        .image-grid-item5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .image-grid5 img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover; /* Ensure images maintain aspect ratio */
+            border-radius: 8px; /* Optional: rounded corners */
+        }
+        .image-grid5 p {
+            color: white; /* Text color */
+            font-size: 14px; /* Font size */
+            margin-top: 10px; /* Adjust top margin for spacing */
+        }
+        .navbar {
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            margin-left: auto;
+            margin-right: 50px;
+            gap: 50px;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            display: block;
+            font-size: 20px;
+        }
+    </style>
+    <title>Collections</title>
+</head>
+<body style="background: linear-gradient(45deg, #000, #ffa500);  margin: 0; font-family: Arial, sans-serif;">
+
+    <nav class="navbar">
+        <img src="img\Logo.png" alt="Logo" class="logo">
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="#" onclick="showSection('home')">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" onclick="showSection('about')">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="Collection.html">Collections</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="image-grid5">
+        <!-- Repeat the following structure for each image -->
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+        <div class="image-grid-item5">
+            <img src="img/image1.png" alt="Image 1">
+            <p>Product Name 1</p>
+        </div>
+
+    </div>
+</body>
+</html>

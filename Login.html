@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Login.css">
+<title>Login Form</title>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Login Form</h2>
+        <form id="loginForm" action="#">
+            <label for="employee-surname">Employee Surname:</label>
+            <input type="text" id="employee-surname" name="employee-surname" required>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="" disabled selected>Select Department</option>
+                <option value="accounting">Accounting</option>
+                <option value="payroll">Payroll</option>
+                <option value="scm">Supply Chain Management</option>
+                <option value="marketing">Marketing</option>
+                <option value="hr">Human Resources</option>
+            </select>
+
+            <input type="submit" value="Login">
+            <p id="errorMessage" class="error-message" style="display: none;"></p>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Back to Homepage? <a href="company.html">Click Here</a></p>
+        </div>
+    </footer>
+    
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+
+            var surname = document.getElementById('employee-surname').value.trim();
+            var department = document.getElementById('department').value;
+
+
+            var departmentPages = {
+                'Facundo': 'marketing.html',
+                'De Guzman': 'payroll.html',
+                'Austriaco': 'supply_chain.html',
+                'Estabalaya': 'accounting.html',
+                'Nase': 'hr.html',
+                'facundo': 'marketing.html',
+                'de Guzman': 'payroll.html',
+                'austriaco': 'supply_chain.html',
+                'estabalaya': 'accounting.html',
+                'nase': 'hr.html',
+                'FACUNDO': 'marketing.html',
+                'DE GUZMAN': 'payroll.html',
+                'AUSTRIACO': 'supply_chain.html',
+                'ESTABALAYA': 'accounting.html',
+                'NASE': 'hr.html'
+            };
+
+            if (departmentPages.hasOwnProperty(surname)) {
+
+                if (departmentPages[surname] === department + '.html') {
+
+                    window.location.href = departmentPages[surname];
+                } else {
+                    document.getElementById('errorMessage').textContent = 'Selected department does not match the employee\'s department.';
+                    document.getElementById('errorMessage').style.display = 'block';
+                }
+            } else {
+                document.getElementById('errorMessage').textContent = 'Employee surname not recognized.';
+                document.getElementById('errorMessage').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(0deg, #000, #ffa500); 
+    color: #fff; 
+}
+
+.navbar {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 50px;
+    gap: 50px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    font-size: 20px;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    z-index: 1;
+}
+
+.dropdown li a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #444;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-links {
+        margin-left: 0;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-item {
+        position: static;
+    }
+
+    .nav-item:hover .dropdown {
+        display: none;
+    }
+
+    .dropdown {
+        position: static;
+        background-color: transparent;
+        min-width: auto;
+    }
+
+    .dropdown li a {
+        padding: 10px 20px;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown li a:hover {
+        background-color: #444;
+     }
+
+}
+
+.banner {
+    text-align: center; 
+    margin-top: 0; 
+}
+
+.banner img {
+    max-width: 100%; 
+}
+
+.intro {
+    text-align: justify; 
+    margin: 20px 200px; 
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px; 
+    margin-top: 100px; 
+    margin-left: 0;
+}
+
+.intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px; 
+    margin-top: 100px; 
+    margin-left: 0;
+}
+
+.intro2 {
+    text-align: justify; 
+    margin: 20px 200px; 
+}
+
+.intro2 h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px; 
+    margin-top: 100px; 
+}
+
+.intro {
+    text-align: justify; 
+    margin: 20px 200px; 
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 100px; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.image-item {
+    margin: 0 10px;
+}
+
+.image-item img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.image-container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.image-container2 .image-item {
+    margin: 0 50px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 300px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.footer-links {
+    margin-top: 10px; 
+}
+
+.click-here-link {
+    color: #ffcc00;
+    text-decoration: none; 
+    font-size: 1.2em; 
+    transition: color 0.3s ease; 
+}
+
+.click-here-link:hover {
+    color: #ffd633; 
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+
+
+.section {
+    display: none;
+}
+
+#home.section {
+    display: block;
+}
+
+.welcome-section { 
+    padding: 25px; 
+    color: #fff; 
+    font-family: Arial, sans-serif; 
+    text-align: justify;
+    margin: 100px;
+}
+
+.welcome-section h1 { 
+    font-size: 2.5em; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.welcome-section h2 {
+    font-size: 28px; 
+    margin-top: 100px; 
+    margin-bottom: 10px; 
+}
+
+.welcome-section p { 
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.welcome-section ul { 
+    list-style: none; 
+    padding: 0; 
+}
+
+.welcome-section ul li { 
+    font-size: 18px; 
+    margin-top: 40px;
+    margin-left: 30px;
+    line-height: 1.6; 
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.welcome-section ul li strong { 
+    color: #ffa500; 
+}
+
+.welcome-section strong { 
+    color: #ffa500; 
+    
+}
